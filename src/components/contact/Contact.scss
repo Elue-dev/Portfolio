@@ -1,0 +1,122 @@
+@import '../../globalStyles.scss';
+
+.contact {
+    @include wrapper();
+    .title {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        padding-top: 3rem
+    }
+    .heading {
+        margin-bottom: 1rem;
+        text-align: center
+    }
+    .contact_items {
+        @include flexBox(space-between, center, auto);
+        .contact_details {
+            .name, .location, .email,
+            .linkedin, .github, .resume {
+                @include flexBox(left, center, 1rem);
+                line-height: 2.5;
+                p, a {
+                    font-size: 1.2rem;
+                }
+                a {
+                    text-decoration: underline;
+                }
+                .contact_icon {
+                    color: $mainColor;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        form {
+            line-height: 3;
+            .heasding {
+                margin-bottom: 2rem;
+            }
+            .form_icon {
+                margin-right: 1rem;
+                font-size: 1.1rem;
+            }
+            input {
+                width: 600px;
+                height: 50px;
+                margin-bottom: 1.5rem;
+                border: 0;
+                outline: 0;
+                border-bottom: 1px solid #555;
+                font-size: 1.2rem;
+                &:hover {
+                    border-bottom: 1px solid $mainColor;
+                }
+            }
+            .submit {
+                background: $mainColor;
+                color: #444;
+                padding: .7rem 1.2rem;
+                display: inline-block;
+                margin-top: 1rem;
+                font-weight: 700;
+                border-radius: 1rem;
+                border: 1px solid $mainColor;
+                width: 100px;
+                font-weight: 700;
+                font-size: 1.1rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@include mQ (1024px) {
+    .contact .contact_items form input {
+        width: 438px;
+    }
+}
+@include mQ (920px) {
+    .contact .contact_items form {
+        margin-bottom: 1.3rem;
+    }
+    .contact .title {
+        padding-bottom: 4rem;
+        padding-top: 3rem;
+    }    
+}
+@include mQ (820px) {
+    .contact .contact_items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact .contact_items .contact_details {
+        padding-bottom: 3rem;
+    }
+    .contact .contact_items .contact_details .info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1rem;
+        column-gap: 9rem;
+    }
+    .contact .heading {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+    .contact .contact_items form .submit {
+        width: 100%;
+    }
+}
+@include mQ(420px) {
+    .contact .contact_items {
+        align-items: flex-start;
+    }
+    .contact .contact_items .contact_details .info {
+       display: flex;
+       flex-direction: column;
+    }
+    .contact .contact_items form input {
+        width: 300px;
+    }
+    .contact .title {
+        padding-top: 3rem;
+    }
+}

@@ -1,0 +1,63 @@
+@mixin flexBox($justify, $align, $gap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin grid($tempCol) {
+    display: grid;
+    grid-template-columns: $tempCol;
+}
+
+@mixin wrapper() {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+@mixin mQ($respond){
+    @media (max-width: $respond){
+        @content;
+    }
+}
+
+$mainColor: #f8b915;
+$light: #fff;
+
+body {
+    color: #333;
+    font-size: 1rem;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.title {
+    text-align: center;
+    position: relative;
+    font-family: 'Permanent Marker', cursive;
+}
+.error, .success {
+    color: #fff;
+    border-radius: 1rem;
+    span {
+        padding: 1rem;
+        font-weight: 600;
+    }
+} 
+.error {
+    background: red;
+}
+.success {
+    background: green;
+}
+
+@include mQ(420px) {
+    .title {
+        font-size: 1.8rem;
+    }
+}

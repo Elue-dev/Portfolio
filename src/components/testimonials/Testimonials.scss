@@ -1,0 +1,92 @@
+@import '../../globalStyles.scss';
+
+.testimonials {
+    .title {
+        padding-bottom: 5rem;
+        padding-top: 5rem
+    }
+    .testimonial_cards {
+        @include flexBox(space-between, center, 2rem);
+        @include wrapper();
+        position: relative;
+        margin-bottom: 2rem;
+        .testimomnial_one, .testimomnial_two {
+            border-radius: .4rem;
+        }
+        img {
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: -3rem;
+            border: 5px solid #fff;
+            z-index: 1000;
+        }
+        .test_texts {
+            background: #f7f7f7;
+            box-shadow: 0 3px 8px rgba(0,0,0,.3);
+            max-height: 400px;
+            width: 100%;
+            border: 1px solid #f7f7f7;
+            padding: 2rem;
+            margin-top: 4rem;
+            position: relative;
+            z-index: 1;
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #000;
+                opacity: .8;
+                z-index: -1;
+            }
+            .tes_title {
+                margin-bottom: 1rem;
+                color: $mainColor;
+                margin-top: 3.5rem;
+                i {
+                    font-weight: 500;
+                    color: #fff;
+                    font-weight: 600;
+                }
+            }
+            .tes_detail {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@include mQ (820px) {
+    .testimonials .testimonial_cards .test_texts .tes_title i {
+        font-size: 1.2rem;
+    }
+}
+@include mQ(420px) {
+    .testimonials .title {
+        padding-top: 2rem;
+    }
+    .testimonials .testimonial_cards {
+       flex-direction: column;
+       gap: 5rem;
+       padding-bottom: 1rem;
+    }
+    .testimonials .testimonial_cards img {
+        position: relative;
+        top: 9rem;
+    }
+    .testimonials .testimonial_cards img {
+        margin-top: -10rem;
+    }
+    .testimonials .testimonial_cards .testimonial_one {
+        padding-top: 1.7rem;
+    }
+    .testimonials .testimonial_cards .testimonial_one h2,
+    .testimonials .testimonial_cards .testimonial_two h2 {
+        font-size: 1.5rem;
+    }
+}

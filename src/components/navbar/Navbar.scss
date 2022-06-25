@@ -1,0 +1,136 @@
+@import '../../globalStyles.scss';
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    background: #fff;
+    box-shadow: 0 3px 8px rgba(0,0,0,.3);
+    .menu {
+        z-index: 1000;
+    }
+}
+.nav {
+    @include wrapper();
+    @include flexBox(space-between, center, auto);
+    padding: 1rem 0;
+    position: relative;
+    .logo {
+        font-size: 1.9rem;
+        font-family: 'Permanent Marker', cursive;
+        span {
+            color: $mainColor;
+        }
+    }
+    .menu_open, .menu_close {
+        display: none;
+        cursor: pointer;
+    }
+    .nav_links {
+        display: flex;
+        margin-right: 1rem;
+        li {
+            margin-right: 1rem;
+            a {
+                transition: .2s ease;
+                font-size: 1.2rem;
+                color: #333;
+                &:hover {
+                    color: $mainColor;
+                }
+            }
+        }
+        .signBtn {
+            background: $mainColor;
+            color: #333;
+            padding: .3rem 1rem;
+            display: inline-block;
+            font-weight: 700;
+            border-radius: 1rem;
+            cursor: pointer;
+            margin-top: -.5rem;
+            &:hover {
+                color: #333;
+            }
+        }
+    }
+    .nav_links.show {
+        // top: -47px;
+        opacity: 1;
+    }
+    .signin {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+}
+
+@include mQ(820px) {
+    *, body {
+        font-size: 1.1rem;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    .nav .logo a,
+    .nav .logo span {
+        font-size: 2.4rem;
+    }
+    .nav .menu_open , .nav .menu_close{
+        display: block;
+        font-size: 3rem;
+        color: $mainColor;
+        z-index: 10000;
+    }
+    .nav .nav_links {
+        position: absolute;
+        right: -35px;
+        top: -50px;
+        background: #fff;
+        width: 112%;
+        height: 548px;
+        line-height: 2.5;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .5s ease;
+        opacity: 0;
+    }
+    .nav .nav_links .show {
+        right: -17px;
+    }
+    .nav .nav_links li a {
+        font-size: 1.6rem;
+    }
+    .nav .nav_links .signBtn {
+        padding: 0.2rem 1.2rem;
+        margin-top: 1.1rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
+@include mQ(420px) {
+    *, body {
+        font-size: .9rem;
+    }
+    .nav .logo a, .nav .logo span {
+        font-size: 1.6rem;
+    }
+    .nav .menu_open, .nav .menu_close {
+        font-size: 2rem;
+    }
+    .hero_text h2 span {
+        font-size: 1.9rem;
+    }
+    .hero_text h2 {
+        font-size: 1.4rem;
+    }
+    .hero_text p {
+        font-size: 1.2rem;
+    }
+    .nav .nav_links li a {
+        font-size: 1.3rem;
+    }
+}
