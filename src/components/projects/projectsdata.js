@@ -13,7 +13,7 @@ export const projects = [
         title: 'Ecommerce Application',
         desc: 'A e-commerce app built with react, firebase for authentication and flutterwave as payment gateway',
         href: 'https://quickshopapp.netlify.app',
-        stacks: 'react w/ context API, firebase'
+        stacks: 'react w/ context API & useReducers, firebase'
     },
     {
         id: '3',

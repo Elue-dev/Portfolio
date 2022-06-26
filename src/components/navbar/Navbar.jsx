@@ -13,7 +13,6 @@ export default function Navbar() {
     try {
       await googleSignin()
       setMenuOpen(false)
-      alert('logged in')
     } catch(err) {
       console.log(err.message)
     }
@@ -23,7 +22,6 @@ export default function Navbar() {
     try {
       await logout()
       setMenuOpen(false)
-      alert('logged out')
     } catch(err) {
       console.log(err.message)
     }
