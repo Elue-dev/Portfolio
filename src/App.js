@@ -1,10 +1,13 @@
+import { useContext } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import { ModeContext } from './contexts/ModeContext';
 import Homepage from './pages/Homepage';
 
 function App() {
+  const { mode }  = useContext(ModeContext)
   return (
-    <div className="App">
+    <div className={`App ${mode}`}>
       <BrowserRouter>
         <Homepage />
       </BrowserRouter>

@@ -19,7 +19,7 @@ export default function Testimonials() {
             <div className="testimonial_two">
                 <img src={TestTwo} alt='ridwan otun' className='read' />
                 <div className="test_texts" style={{ background: `url(${TesImage})`}}>
-                    <h2 className="tes_title">Ridwan 0tun <br /> <i>Backend Engineer at Bamboo</i></h2>
+                    <h2 className="tes_title">Ridwan Otun <br /> <i>Backend Engineer at Bamboo</i></h2>
                     <p className="tes_detail">Elue Wisdom is willing to learn and is passionate about this job. 
                     I like his willingness to work amongst most.</p>
                 </div>

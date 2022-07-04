@@ -50,14 +50,30 @@ a {
     }
 } 
 .error {
-    background: red;
+    background: pink;
+    color: red;
+    border: 1px solid red;
 }
 .success {
-    background: green;
+    background: rgb(183, 215, 136);
+    color: green;
+    border: 1px solid green;
 }
 
 @include mQ(420px) {
     .title {
         font-size: 1.8rem;
+    }
+    .App.dark .nav .dark_mode {
+        font-size: 1.7rem;
+        cursor: pointer;
+        filter: invert(100%);
+    }
+    .skills .skills_info .skills_lang {
+        .html, .css, .javaScript, 
+        .redux, .sass, .bootstrap,
+        .react, .nextjs {
+            font-size: 1.5rem;
+        }
     }
 }

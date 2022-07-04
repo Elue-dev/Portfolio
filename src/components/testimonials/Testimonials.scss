@@ -1,6 +1,7 @@
 @import '../../globalStyles.scss';
 
 .testimonials {
+    @include wrapper();
     .title {
         padding-bottom: 5rem;
         padding-top: 5rem

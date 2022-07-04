@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -20,4 +21,43 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+ /* --------------dark mode styling----------- */
+.App.dark {
+  background: #111;
+}
+.App.dark nav {
+  background: #222;
+  color: #fff;
+}
+.App.dark a, .App.dark ul,
+.App.dark div {
+  color: #fff;
+}
+.App.dark .nav .nav_links li a {
+  transition: .2s ease;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.App.dark input {
+  background: #111;
+  color: #fff;
+}
+.App.dark .contact .contact_items form input {
+  border-bottom: 1px solid #fff;
+}
+.App.dark .contact .contact_items form input:hover {
+  border-bottom: 1px solid #f8b915;
+}
+.App.dark .nav .nav_links .signBtn {
+  color: #333;
+}
+.App.dark.skills .skills_info {
+  gap: 5rem;
+}
+.App.dark .skills .skills_info .skills_image img {
+ display: none;
+}
+.App.dark .skills .skills_info {
+  margin-bottom: 2rem;
 }

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './Contact.scss'
 import { RiContactsFill } from 'react-icons/ri'
 import { ImLocation } from 'react-icons/im'
@@ -6,7 +7,9 @@ import { AiOutlineLinkedin } from 'react-icons/ai'
 import { BsGithub } from 'react-icons/bs'
 import { AiFillFileText } from 'react-icons/ai'
 import { BsChatRightText } from 'react-icons/bs'
-import { useState } from 'react'
+import { BiLoader } from 'react-icons/bi'
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
+import { database } from '../../firebase'
 
 export default function Contact() {
     const [title, setTitle] = useState('')
@@ -14,29 +17,41 @@ export default function Contact() {
     const [message, setMessage] = useState('')
     const [error, setError] = useState(null)
     const [success, setSuccess] = useState(null)
+    const [loading, setLoading] = useState(null)
     
-    function handleSubmit(e) {
+    const handleSubmit = async(e) => {
         e.preventDefault()
 
-        if (title === '' && email === '' && message === '') {
-            setError('Please fill all fields')
-        } else if (title === '') {
-             setError('Name is required')
-        } else if (email === '') {
-             setError('Email is required')
-        } else if (message === '') {
-             setError('Please enter a message')
-        } else {
-            setError(false)
+        try {
+            if (title === '' || email === '' || message === '') {
+              setError('Please fill fields')
+              window.setTimeout(() => {
+                setError('')
+            }, 3000)
+              return
+            }
+      
+            setLoading(true)
+            setError('')
+            setSuccess('')
+      
+            const colRef = collection(database, 'messages')
+            await addDoc(colRef, {
+              title, email, message,
+              time: serverTimestamp()
+            })
+            setLoading(false)
             setSuccess('Thank you for your submission')
-            setTitle('')
-            setEmail('')
-            setMessage('')
-            window.setInterval(() => {
-                setSuccess('')
-            }, 1500)
+            window.setTimeout(() => {
+              setSuccess('')
+          }, 4000)
+              setTitle('')
+              setEmail('')
+              setMessage('')
+          } catch (err) {
+            console.log(err.message)
+          }
         }
-    }
 
   return (
     <div className='contact' id='contact'>
@@ -78,7 +93,7 @@ export default function Contact() {
                 <RiContactsFill className='form_icon '/><input type="text" name='name' placeholder='Your Name...' value={title} onChange={(e)=>setTitle(e.target.value)} /><br />
                 <GiLetterBomb className='form_icon' /><input type="email" name='email' placeholder=' Your Email...' value={email} onChange={(e)=>setEmail(e.target.value)} /><br />
                 <BsChatRightText className='form_icon' /><input name='message' placeholder= 'Message...' value={message} onChange={(e)=>setMessage(e.target.value)} /><br />
-                <button type="submit" className="submit">Submit</button>
+                <button type='sumbit' className='submit'>{loading ? <BiLoader /> : 'Submit'}</button>
             </form>
         </div>
     </div>
