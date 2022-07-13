@@ -8,16 +8,16 @@ export const projects = [
         stacks: 'html, css, vanilla javaScript'
     },
     {
-        id: 14,
+        id: 2,
         image: 'shopland.png',
         title: 'Shopland E-commerce application',
         desc: 'A fullstack e-commerce application with firebase as a backend service, with features such as authentication, google oAuth, admin panel to add edit and delete products as well as change order status which reflects on users page, review section to review products after a purchase, etc. ',
-        href: 'https://wisdomsworld.netlify.app',
+        href: 'https://shop-land.netlify.app',
         stacks: 'react, redux toolkit, firebase, stripe'
     },
     
     {
-        id: 2,
+        id: 3,
         image: 'quickshop.png',
         title: 'Ecommerce Application',
         desc: 'A e-commerce app built with react, firebase for authentication and flutterwave as payment gateway',
@@ -25,7 +25,7 @@ export const projects = [
         stacks: 'react w/ context API & useReducers, firebase'
     },
     {
-        id: 3,
+        id: 4,
         image: 'abnb.png',
         title: 'AirBnB like clone',
         desc: 'AirBnB like web app built with React and Redux. JSON Web Token (from a backend dev) for user verification.',
@@ -33,19 +33,11 @@ export const projects = [
         stacks: 'react, redux, css'
     },
     {
-        id: 4,
+        id: 5,
         image: 'fintracker.png',
         title: 'Finance tracker app',
         desc: 'Simple react app where you can store and track your transactions. The transactions that shows is dependent on the user that is signed in. Homepage is a protected route as well.',
         href: 'https://financetrackerapp.netlify.app',
-        stacks: 'react w/ context API, firebase'
-    },
-    {
-        id: 5,
-        image: 'auth.png',
-        title: ' React Authentication',
-        desc: 'React authentication system with firebase, includes signup, login, google OAuth, forgot password features.',
-        href: 'https://rxtfirebaseauth.netlify.app',
         stacks: 'react w/ context API, firebase'
     },
     {
