@@ -4,7 +4,6 @@ import { useAuth } from '../../contexts/AuthContext'
 import { RiMenuAddLine } from 'react-icons/ri'
 import { VscEyeClosed } from 'react-icons/vsc'
 import { MdOutlineLightMode, MdLightMode } from 'react-icons/md'
-import 'react-toastify/dist/ReactToastify.css'
 import { ModeContext } from '../../contexts/ModeContext'
 
 export default function Navbar() {
