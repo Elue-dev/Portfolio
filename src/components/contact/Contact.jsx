@@ -6,7 +6,8 @@ import { GiLetterBomb } from 'react-icons/gi'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import { BsGithub } from 'react-icons/bs'
 import { AiFillFileText } from 'react-icons/ai'
-import { BsChatRightText } from 'react-icons/bs'
+import { BsChatRightText, BsCheck2All } from 'react-icons/bs'
+import { FiAlertTriangle } from 'react-icons/fi'
 import { BiLoader } from 'react-icons/bi'
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
 import { database } from '../../firebase'
@@ -24,7 +25,7 @@ export default function Contact() {
 
         try {
             if (title === '' || email === '' || message === '') {
-              setError('Please fill fields')
+              setError('Please fill all fields')
               window.setTimeout(() => {
                 setError('')
             }, 3000)
@@ -41,7 +42,7 @@ export default function Contact() {
               time: serverTimestamp()
             })
             setLoading(false)
-            setSuccess('Thank you for your submission')
+            setSuccess('Your message has been recieved, thank you')
             window.setTimeout(() => {
               setSuccess('')
           }, 4000)
@@ -73,7 +74,7 @@ export default function Contact() {
                     </div>
                     <div className='linkedin'>
                         <AiOutlineLinkedin className='contact_icon' />
-                        <a href="https://www.linkedin.com/in/elue-wisdom-dubem-8822a5188">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/wisdom-elue-8822a5188">LinkedIn</a>
                     </div>
                     <div className="github">
                         <BsGithub className='contact_icon' />
@@ -87,8 +88,8 @@ export default function Contact() {
             </div>
             <form className="contact_form" onSubmit={handleSubmit} name='contact-form' data-netlify='true'>
                 <h3 className="heading">Leave a Message.</h3>
-                {error && <p className='error'> <span>{error}</span></p>}
-                {success && <p className='success'> <span>{success}</span></p>}
+                {error && <p className='error'> <span><FiAlertTriangle />&nbsp; {error}</span></p>}
+                {success && <p className='success'> <span><BsCheck2All/>&nbsp; {success}</span></p>}
                 <input type="hidden" name='form-name' value='contact-form' />
                 <RiContactsFill className='form_icon '/><input type="text" name='name' placeholder='Your Name...' value={title} onChange={(e)=>setTitle(e.target.value)} /><br />
                 <GiLetterBomb className='form_icon' /><input type="email" name='email' placeholder=' Your Email...' value={email} onChange={(e)=>setEmail(e.target.value)} /><br />

@@ -103,6 +103,12 @@ nav {
         transition: .5s ease;
         opacity: 0;
         pointer-events: none;
+        z-index: 100000;
+        border: 50px solid rgb(62, 60, 60);
+        border-radius: 80px;
+    }
+    nav .menu {
+        z-index: 1000000;
     }
     .nav .nav_links .show {
         right: -17px;
@@ -142,5 +148,8 @@ nav {
     }
     .nav .nav_links li a {
         font-size: 1.3rem;
+    }
+    .nav .signin {
+        margin-bottom: 0.5rem;
     }
 }

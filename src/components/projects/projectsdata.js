@@ -8,6 +8,15 @@ export const projects = [
         stacks: 'html, css, vanilla javaScript'
     },
     {
+        id: 14,
+        image: 'shopland.png',
+        title: 'Shopland E-commerce application',
+        desc: 'A fullstack e-commerce application with firebase as a backend service, with features such as authentication, google oAuth, admin panel to add edit and delete products as well as change order status which reflects on users page, review section to review products after a purchase, etc. ',
+        href: 'https://wisdomsworld.netlify.app',
+        stacks: 'react, redux toolkit, firebase, stripe'
+    },
+    
+    {
         id: 2,
         image: 'quickshop.png',
         title: 'Ecommerce Application',
