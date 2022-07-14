@@ -65,6 +65,23 @@
                 font-size: 1.1rem;
                 cursor: pointer;
             }
+            
+        }
+    }
+    .whatsapp {
+        background-color: $mainColor;
+        color: #333;
+        border: 0;
+        border-radius: .5rem;
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .4rem;
+        span {
+            font-size: 1rem;
+            font-weight: 700;
         }
     }
 }
