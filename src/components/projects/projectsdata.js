@@ -5,7 +5,7 @@ export const projects = [
     title: "Shopland E-commerce application",
     desc: "A fullstack e-commerce application with firebase as a backend service, with features such as authentication, google oAuth, admin panel to add edit and delete products as well as change order status which reflects on users page, review section to review products after a purchase, etc. ",
     href: "https://shop-land.netlify.app",
-    stacks: "react, redux toolkit, firebase, stripe",
+    stacks: "react, sass, redux toolkit, firebase, paystack",
   },
   {
     id: 2,

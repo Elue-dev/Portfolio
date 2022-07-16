@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-@media(max-width: 420px) {
+@media (max-width: 420px) {
   * {
     overflow-x: clip;
   }
@@ -18,16 +18,16 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
- /* --------------dark mode styling----------- */
+/* --------------dark mode styling----------- */
 .App.dark {
   background: #111;
 }
@@ -35,12 +35,13 @@ code {
   background: #222;
   color: #fff;
 }
-.App.dark a, .App.dark ul,
+.App.dark a,
+.App.dark ul,
 .App.dark div {
   color: #fff;
 }
 .App.dark .nav .nav_links li a {
-  transition: .2s ease;
+  transition: 0.2s ease;
   font-size: 1.2rem;
   color: #fff;
 }
@@ -61,7 +62,7 @@ code {
   gap: 5rem;
 }
 .App.dark .skills .skills_info .skills_image img {
- display: none;
+  display: none;
 }
 .App.dark .skills .skills_info {
   margin-bottom: 2rem;
