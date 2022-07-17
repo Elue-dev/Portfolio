@@ -69,7 +69,7 @@ export const projects = [
     image: "rmorty.png",
     title: "Rick and Morty App",
     desc: "Rick and Morty App built with React and GraphQL",
-    href: "https://ricknmortyapp.netlify.app",
+    href: "https://ricknmortyyapp.netlify.app",
     stacks: "react , css, graphQL",
   },
   {
