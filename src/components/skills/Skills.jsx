@@ -7,6 +7,7 @@ import { FaSass } from "react-icons/fa";
 import { TbBrandBootstrap } from "react-icons/tb";
 import { SiNextdotjs, SiFirebase, SiRedux } from "react-icons/si";
 import SkillsImage from "../../assets/dev.webp";
+import rtlImage from "../../assets/rtl.png";
 
 export default function Skills() {
   return (
@@ -55,6 +56,14 @@ export default function Skills() {
             <p>
               <SiFirebase className="firebase" />
               <span>FIREBASE</span>
+            </p>
+            <p>
+              <img
+                src={rtlImage}
+                alt="react-testing-library"
+                style={{ width: "15%" }}
+              />
+              <span>REACT TESTING LIBRARY</span>
             </p>
           </div>
         </div>
