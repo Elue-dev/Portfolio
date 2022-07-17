@@ -13,7 +13,7 @@ const ModeReducer = (state, action) => {
 
 export const ModeProvider = ({ children }) => {
   const [state, dispatch] = useReducer(ModeReducer, {
-    mode: "light",
+    mode: "dark",
   });
 
   const changeMode = (mode) => {
