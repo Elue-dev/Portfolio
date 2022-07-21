@@ -78,7 +78,7 @@ nav {
   padding: 0 1rem;
   display: grid;
   align-content: center;
-  overflow-x: hidden;
+  overflow-x: auto;
   opacity: 0;
   pointer-events: none;
   z-index: 100000;
@@ -94,7 +94,7 @@ nav {
     li {
       list-style: none;
       span {
-        font-size: .85rem;
+        font-size: 0.85rem;
       }
     }
   }
@@ -113,9 +113,19 @@ nav {
   h1 {
     font-size: 2.2rem;
   }
+  .bottom__nav {
+    opacity: 1;
+    pointer-events: all;
+    ul {
+      justify-content: space-around;
+    }
+  }
+  .nav .nav_links {
+    display: none;
+  }
   .nav .logo a,
   .nav .logo span {
-    font-size: 2.4rem;
+    font-size: 1.3rem;
   }
   .nav .nav_links li a {
     font-size: 1.6rem;
@@ -130,17 +140,7 @@ nav {
   }
 }
 
-@include mQ(700px) {
-  .nav .nav_links {
-    display: none;
-  }
-  .bottom__nav {
-    opacity: 1;
-    pointer-events: all;
-  }
-}
-
-@include mQ(420px) {
+@include mQ(540px) {
   *,
   body {
     font-size: 0.9rem;
@@ -148,6 +148,13 @@ nav {
   .nav .logo a,
   .nav .logo span {
     font-size: 1.6rem;
+  }
+  .bottom__nav {
+    opacity: 1;
+    pointer-events: all;
+    ul {
+      justify-content: auto;
+    }
   }
   .hero_text h2 span {
     font-size: 1.9rem;
