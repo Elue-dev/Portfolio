@@ -71,6 +71,45 @@ nav {
   }
 }
 
+.bottom__nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  border: 0.5px solid #333;
+  height: 4.5rem;
+  padding: 0 1rem;
+  display: grid;
+  align-content: center;
+  overflow-x: hidden;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 100000;
+  a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    li {
+      list-style: none;
+      span {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.App.dark .bottom__nav {
+  background: #222;
+  border-top: 0.1px solid #fff;
+}
+
 @include mQ(820px) {
   *,
   body {
@@ -129,6 +168,16 @@ nav {
   }
 }
 
+@include mQ(700px) {
+  .nav .nav_links {
+    display: none;
+  }
+  .bottom__nav {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
 @include mQ(420px) {
   *,
   body {
@@ -156,5 +205,11 @@ nav {
   }
   .nav .signin {
     margin-bottom: 0.5rem;
+  }
+  .App.dark .nav .dark_mode {
+    font-size: 1.7rem;
+    cursor: pointer;
+    filter: invert(100%);
+    color: dimgray;
   }
 }

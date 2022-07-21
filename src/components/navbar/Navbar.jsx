@@ -1,93 +1,55 @@
 import { useContext, useState } from "react";
 import "./Navbar.scss";
-import { useAuth } from "../../contexts/AuthContext";
-import { RiMenuAddLine } from "react-icons/ri";
-import { VscEyeClosed } from "react-icons/vsc";
-import { MdOutlineLightMode, MdLightMode } from "react-icons/md";
+import { MdOutlineLightMode, MdLightMode, MdReviews } from "react-icons/md";
+import { FcInfo, FcHome, FcContacts, FcWorkflow } from "react-icons/fc";
+import { GiSkills } from "react-icons/gi";
 import { ModeContext } from "../../contexts/ModeContext";
 
 export default function Navbar() {
-  const { user, googleSignin, logout } = useAuth();
-  const [menuOpen, setMenuOpen] = useState(false);
   const { mode, changeMode } = useContext(ModeContext);
 
-  const handleGoogleSignIn = async () => {
-    try {
-      await googleSignin();
-      setMenuOpen(false);
-    } catch (err) {
-      console.log(err.message);
-    }
-  };
-
-  const handleLogout = async () => {
-    try {
-      await logout();
-      setMenuOpen(false);
-    } catch (err) {
-      console.log(err.message);
-    }
-  };
-
   return (
-    <nav>
-      <div className="nav">
-        <div className="logo">
-          <a href="#">
-            Elue-<span>Dev</span>
-          </a>
-        </div>
-        <div className="menu">
-          {menuOpen ? (
-            <VscEyeClosed
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="menu_open"
-            />
-          ) : (
-            <RiMenuAddLine
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="menu_open"
-            />
-          )}
-        </div>
-        <ul
-          className={menuOpen ? "nav_links show" : "nav_links"}
-          onClick={() => setMenuOpen(false)}
-        >
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#testimonials">Testimonials</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          {user ? (
-            <li onClick={handleLogout} style={{ cursor: "pointer" }}>
-              <a className="signBtn">Sign Out</a>
+    <>
+      <nav>
+        <div className="nav">
+          <div className="logo">
+            <a href="#">
+              Elue-<span>Dev</span>
+            </a>
+          </div>
+          {/* <div className="menu">
+            {menuOpen ? (
+              <VscEyeClosed
+                onClick={() => setMenuOpen(!menuOpen)}
+                className="menu_open"
+              />
+            ) : (
+              <RiMenuAddLine
+                onClick={() => setMenuOpen(!menuOpen)}
+                className="menu_open"
+              />
+            )}
+          </div> */}
+          <ul className="nav_links">
+            <li>
+              <a href="#">Home</a>
             </li>
-          ) : (
-            <li onClick={handleGoogleSignIn} style={{ cursor: "pointer" }}>
-              <a className="signBtn">Sign In</a>
+            <li>
+              <a href="#about">About</a>
             </li>
-          )}
-          {user && (
-            <img
-              src={user.photoURL}
-              alt={user.displayName}
-              className="signin"
-            />
-          )}
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
           <li className="change_mode">
             {mode === "light" ? (
               <MdLightMode
@@ -101,8 +63,49 @@ export default function Navbar() {
               />
             )}
           </li>
+        </div>
+      </nav>
+
+      <div className="bottom__nav">
+        <ul>
+          <li>
+            <a href="/#">
+              <FcHome size={25} />
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about">
+              <FcInfo size={25} />
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills">
+              <GiSkills size={25} style={{ color: "coral" }} />
+              <span>Skills</span>
+            </a>
+          </li>
+          <li>
+            <a href="/#projects">
+              <FcWorkflow size={25} />
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#testimonials">
+              <MdReviews size={25} style={{ color: "#b68e2a" }} />
+              <span>Testim..</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <FcContacts size={25} />
+              <span>Contacts</span>
+            </a>
+          </li>
         </ul>
       </div>
-    </nav>
+    </>
   );
 }
