@@ -70,38 +70,38 @@ export default function Navbar() {
         <ul>
           <li>
             <a href="/#">
-              <FcHome size={25} />
+              <FcHome size={35} />
               <span>Home</span>
             </a>
           </li>
           <li>
             <a href="#about">
-              <FcInfo size={25} />
+              <FcInfo size={35} />
               <span>About</span>
             </a>
           </li>
           <li>
             <a href="#skills">
-              <GiSkills size={25} style={{ color: "coral" }} />
+              <GiSkills size={35} style={{ color: "coral" }} />
               <span>Skills</span>
             </a>
           </li>
           <li>
             <a href="/#projects">
-              <FcWorkflow size={25} />
+              <FcWorkflow size={35} />
               <span>Projects</span>
             </a>
           </li>
           <li>
             <a href="#testimonials">
-              <MdReviews size={25} style={{ color: "#b68e2a" }} />
+              <MdReviews size={35} style={{ color: "#b68e2a" }} />
               <span>Testim..</span>
             </a>
           </li>
           <li>
             <a href="#contact">
-              <FcContacts size={25} />
-              <span>Contacts</span>
+              <FcContacts size={35} />
+              <span>Contact</span>
             </a>
           </li>
         </ul>
