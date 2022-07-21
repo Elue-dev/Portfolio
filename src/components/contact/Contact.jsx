@@ -96,8 +96,8 @@ export default function Contact() {
                 message="Hi there, i am from your website, i want to leave a message..."
                 className="whatsapp"
               >
-                <TbBrandWhatsapp size={25} />
-                &nbsp; <span>Leave a message</span>
+                <TbBrandWhatsapp size={20} />
+                &nbsp; <span>Send Message</span>
               </ReactWhatsapp>
             </div>
           </div>
