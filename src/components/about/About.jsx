@@ -4,7 +4,7 @@ import Photo from "../../assets/wisdom.jpeg";
 export default function About() {
   return (
     <div className="about" id="about">
-      <h1 className="title">About me</h1>
+      <h1 className="title">About</h1>
       <div className="about_info">
         <div className="about_image">
           <img src={Photo} alt="wisdom's picture" />
