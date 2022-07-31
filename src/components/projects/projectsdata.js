@@ -85,7 +85,7 @@ export const projects = [
     image: "ecommerce.png",
     title: "Ecommerce website design",
     desc: "Frontend of a mini e-commerce site. ",
-    href: "https://abnb.netlify.app",
+    href: "https://redstoresite.netlify.app",
     stacks: "html , css, vanilla javaScript",
   },
   {
