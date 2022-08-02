@@ -2,6 +2,7 @@ import "./Skills.scss";
 import { ImHtmlFive } from "react-icons/im";
 import { ImCss3 } from "react-icons/im";
 import { IoLogoJavascript } from "react-icons/io";
+import { BsGithub } from "react-icons/bs";
 import { FaReact } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
 import { TbBrandBootstrap } from "react-icons/tb";
@@ -32,6 +33,10 @@ export default function Skills() {
             <p>
               <IoLogoJavascript className="javaScript" />
               <span>JavaScript</span>
+            </p>
+            <p>
+              <BsGithub className="git" />
+              <span>GIT & GITHUB</span>
             </p>
             <p>
               <FaReact className="react" />
