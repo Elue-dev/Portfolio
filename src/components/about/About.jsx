@@ -18,6 +18,7 @@ export default function About() {
           GraphQL, and Firebase as a backend service. <br /> <br />I have turned
           UI designs into functional responsive websites using the skills i have
           learnt.
+          I have also tested react apps using react testing library and jest.
         </div>
       </div>
     </div>
