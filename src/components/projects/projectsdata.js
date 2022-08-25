@@ -35,13 +35,13 @@ export const projects = [
     href: "https://abnb.netlify.app",
     stacks: "react, redux, css",
   },
-  {
-    image: "fintracker.png",
-    title: "Finance tracker app",
-    desc: "Simple react app where you can store and track your transactions. The transactions that shows is dependent on the user that is signed in. Homepage is a protected route as well.",
-    href: "https://financetrackerapp.netlify.app",
-    stacks: "react w/ context API, firebase",
-  },
+  // {
+  //   image: "fintracker.png",
+  //   title: "Finance tracker app",
+  //   desc: "Simple react app where you can store and track your transactions. The transactions that shows is dependent on the user that is signed in. Homepage is a protected route as well.",
+  //   href: "https://financetrackerapp.netlify.app",
+  //   stacks: "react w/ context API, firebase",
+  // },
   {
     image: "rdirectory.png",
     title: "Recipe app with firebase",
@@ -77,13 +77,13 @@ export const projects = [
     href: "https://oldmicrosoftclone.netlify.app",
     stacks: "html, css, vanilla javaScript",
   },
-  {
-    image: "ecommerce.png",
-    title: "Ecommerce website design",
-    desc: "Frontend of a mini e-commerce site. ",
-    href: "https://redstoresite.netlify.app",
-    stacks: "html , css, vanilla javaScript",
-  },
+  // {
+  //   image: "ecommerce.png",
+  //   title: "Ecommerce website design",
+  //   desc: "Frontend of a mini e-commerce site. ",
+  //   href: "https://redstoresite.netlify.app",
+  //   stacks: "html , css, vanilla javaScript",
+  // },
   {
     image: "numguess.png",
     title: "Number guesser game",

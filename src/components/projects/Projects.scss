@@ -72,6 +72,27 @@
       }
     }
   }
+  .load_more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 7rem;
+    button {
+      background: $light;
+      color: #000;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      border-radius: 1rem;
+      outline: 0;
+      border: 0;
+      cursor: pointer;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
 }
 
 @include mQ(1280px) {
