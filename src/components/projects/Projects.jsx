@@ -13,8 +13,8 @@ export default function Projects() {
       <h1 className="title">Projects</h1>
       <div className="container">
         <div className="projects_grid">
-          {projects.map((project) => (
-            <div className="projects_card" key={project.id}>
+          {projects.map((project, index) => (
+            <div className="projects_card" key={index}>
               <img src={project.image} alt="wisdoms picture" />
               <div className="projects_details">
                 <h2 className="project_title">{project.title}</h2>

@@ -7,7 +7,7 @@ export default function About() {
       <h1 className="title">About</h1>
       <div className="about_info">
         <div className="about_image">
-          <img src={Photo} alt="wisdom's picture" />
+          <img src={Photo} alt="wisdom" />
         </div>
         <div className="about_details">
           I am <span>Elue Wisdom</span>, a Frontend Developer <br /> <br />

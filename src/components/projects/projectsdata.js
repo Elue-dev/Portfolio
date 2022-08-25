@@ -1,6 +1,5 @@
 export const projects = [
   {
-    id: 1,
     image: "shopland.png",
     title: "Shopland E-commerce application",
     desc: "A fullstack e-commerce application with firebase as a backend service, with features such as authentication, google oAuth, admin panel to add edit and delete products as well as change order status which reflects on users page, review section to review products after a purchase, etc. ",
@@ -8,7 +7,13 @@ export const projects = [
     stacks: "react, sass, redux toolkit, firebase, paystack",
   },
   {
-    id: 2,
+    image: "aryhomes.png",
+    title: "Ary Homes",
+    desc: "Ary Homes is a fullstack real estate application with firebase as a backend service, with features such as authentication, google oAuth, fully functional and detailed admin panel to add edit and delete properties, view all users as well as a blog section, users can also add blog posts which would automatically appear on the site",
+    href: "https://aryhomes.netlify.app",
+    stacks: "react, sass, redux toolkit, context API firebase",
+  },
+  {
     image: "wworld.png",
     title: "Wisdoms World Blog",
     desc: "A public health platform aimed at sharing common diseases and preventive tips, health quotes etc",
@@ -17,7 +22,6 @@ export const projects = [
   },
 
   {
-    id: 3,
     image: "quickshop.png",
     title: "Ecommerce Application",
     desc: "A e-commerce app built with react, firebase for authentication and flutterwave as payment gateway",
@@ -25,7 +29,6 @@ export const projects = [
     stacks: "react w/ context API & useReducers, firebase",
   },
   {
-    id: 4,
     image: "abnb.png",
     title: "AirBnB like clone",
     desc: "AirBnB like web app built with React and Redux. JSON Web Token (from a backend dev) for user verification.",
@@ -33,7 +36,6 @@ export const projects = [
     stacks: "react, redux, css",
   },
   {
-    id: 5,
     image: "fintracker.png",
     title: "Finance tracker app",
     desc: "Simple react app where you can store and track your transactions. The transactions that shows is dependent on the user that is signed in. Homepage is a protected route as well.",
@@ -41,7 +43,6 @@ export const projects = [
     stacks: "react w/ context API, firebase",
   },
   {
-    id: 6,
     image: "rdirectory.png",
     title: "Recipe app with firebase",
     desc: "Simple app showing a recipe directory where one can add recipes only if they have an account. Other nice features added",
@@ -49,7 +50,6 @@ export const projects = [
     stacks: "react w/ context API, firebase",
   },
   {
-    id: 7,
     image: "msearch.png",
     title: "Movie Searching App",
     desc: "React application where any movie can be searched, added to favourites and stored in local storage.",
@@ -57,7 +57,6 @@ export const projects = [
     stacks: "react, css",
   },
   {
-    id: 8,
     image: "boon.png",
     title: "Resort landing page",
     desc: "A travel resort landing page, showcasing awesome resorts where people can come to relax or have vacations.",
@@ -65,7 +64,6 @@ export const projects = [
     stacks: "html, css, vanilla javaScript",
   },
   {
-    id: 9,
     image: "rmorty.png",
     title: "Rick and Morty App",
     desc: "Rick and Morty App built with React and GraphQL",
@@ -73,7 +71,6 @@ export const projects = [
     stacks: "react , css, graphQL",
   },
   {
-    id: 10,
     image: "microsoft.png",
     title: "Microsoft Homepage  Clone",
     desc: "AirBnB like web app built with React and Redux. JSON Web Token (from a backend dev) for user verification.",
@@ -81,7 +78,6 @@ export const projects = [
     stacks: "html, css, vanilla javaScript",
   },
   {
-    id: 11,
     image: "ecommerce.png",
     title: "Ecommerce website design",
     desc: "Frontend of a mini e-commerce site. ",
@@ -89,7 +85,6 @@ export const projects = [
     stacks: "html , css, vanilla javaScript",
   },
   {
-    id: 12,
     image: "numguess.png",
     title: "Number guesser game",
     desc: "A Vanilla JavaScript application where random numbers are guessed until it matches the programmed number.",
@@ -97,7 +92,6 @@ export const projects = [
     stacks: "html, css, vanilla JavaScript",
   },
   {
-    id: 13,
     image: "gpt3.png",
     title: "GPT-3 Website",
     desc: "A very cool React landing page built with common react method eg props, state, mapping, etc",
