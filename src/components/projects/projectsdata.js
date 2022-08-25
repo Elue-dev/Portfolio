@@ -1,17 +1,17 @@
 export const projects = [
   {
-    image: "shopland.png",
-    title: "Shopland E-commerce application",
-    desc: "A fullstack e-commerce application with firebase as a backend service, with features such as authentication, google oAuth, admin panel to add edit and delete products as well as change order status which reflects on users page, review section to review products after a purchase, etc. ",
-    href: "https://shop-land.netlify.app",
-    stacks: "react, sass, redux toolkit, firebase, paystack",
-  },
-  {
     image: "aryhomes.png",
     title: "Ary Homes",
     desc: "Ary Homes is a fullstack real estate application with firebase as a backend service, with features such as authentication, google oAuth, fully functional and detailed admin panel to add edit and delete properties, view all users as well as a blog section, users can also add blog posts which would automatically appear on the site",
     href: "https://aryhomes.netlify.app",
     stacks: "react, sass, redux toolkit, context API firebase",
+  },
+  {
+    image: "shopland.png",
+    title: "Shopland E-commerce application",
+    desc: "A fullstack e-commerce application with firebase as a backend service, with features such as authentication, google oAuth, admin panel to add edit and delete products as well as change order status which reflects on users page, review section to review products after a purchase, etc. ",
+    href: "https://shop-land.netlify.app",
+    stacks: "react, sass, redux toolkit, firebase, paystack",
   },
   {
     image: "wworld.png",
