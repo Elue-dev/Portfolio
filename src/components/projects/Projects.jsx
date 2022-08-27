@@ -5,7 +5,7 @@ import Image from "../../assets/dev.webp";
 import { useState } from "react";
 
 export default function Projects() {
-  const [visible, setVisible] = useState(6);
+  const [visibleProjects, setVisible] = useState(6);
 
   const showMore = () => {
     setVisible((prev) => prev + 3);
@@ -20,7 +20,7 @@ export default function Projects() {
       <h1 className="title">Projects</h1>
       <div className="container">
         <div className="projects_grid">
-          {projects.slice(0, visible).map((project, index) => (
+          {projects.slice(0, visibleProjects).map((project, index) => (
             <div className="projects_card" key={index}>
               <img src={project.image} alt={project.title} />
               <div className="projects_details">
@@ -39,7 +39,7 @@ export default function Projects() {
             </div>
           ))}
         </div>
-        {visible === projects.length ? null : (
+        {visibleProjects === projects.length ? null : (
           <div className="load_more">
             <button onClick={showMore}>Show more</button>
           </div>

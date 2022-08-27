@@ -14,6 +14,13 @@ export const projects = [
     stacks: "react, sass, redux toolkit, firebase, paystack",
   },
   {
+    image: "empdir.png",
+    title: "Employee Directory",
+    desc: "An applicatio that contains a full log of employees/staffs, ability to filter and sort according to preference, an expense log that contains all expenses made, which can also be filtered and sorted in detail. More detailes explaination of this project can be found in the README file of the repository of this project: https://github.com/Elue-dev/Employee-Directory",
+    href: "https://employeedirapp.netlify.app",
+    stacks: "react, redux toolkit, react context",
+  },
+  {
     image: "wworld.png",
     title: "Wisdoms World Blog",
     desc: "A public health platform aimed at sharing common diseases and preventive tips, health quotes etc",
