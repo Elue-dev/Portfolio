@@ -3,7 +3,7 @@ export const projects = [
     image: "abode.png",
     title: "Abode Luxury",
     desc: "I built this web app for a client who owns a Real Estate Development Agency in Nigeria, based in Abuja",
-    href: "https://abodeluxury.com",
+    href: "https://abodeluxuryng.com",
     stacks: "Next JS, SASS, redux",
   },
   {
