@@ -1,5 +1,12 @@
 export const projects = [
   {
+    image: "abode.png",
+    title: "Abode Luxury",
+    desc: "I built this web app for a client who owns a Real Estate Development Agency in Nigeria, based in Abuja",
+    href: "https://abodeluxury.com",
+    stacks: "Next JS, SASS, redux",
+  },
+  {
     image: "aryhomes.png",
     title: "Ary Homes",
     desc: "Ary Homes is a fullstack real estate application with firebase as a backend service, with features such as authentication, google oAuth, fully functional and detailed admin panel to add edit and delete properties, view all users as well as a blog section, users can also add blog posts which would automatically appear on the site",
