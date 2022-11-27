@@ -3,12 +3,15 @@ import { ImHtmlFive } from "react-icons/im";
 import { ImCss3 } from "react-icons/im";
 import { IoLogoJavascript } from "react-icons/io";
 import { BsGithub } from "react-icons/bs";
-import { FaReact } from "react-icons/fa";
+import { FaNodeJs, FaReact } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
 import { TbBrandBootstrap } from "react-icons/tb";
-import { SiNextdotjs, SiFirebase, SiRedux } from "react-icons/si";
+import { DiMongodb } from "react-icons/di";
+import { SiNextdotjs, SiFirebase, SiRedux, SiExpress } from "react-icons/si";
 import SkillsImage from "../../assets/dev.webp";
 import rtlImage from "../../assets/rtl.png";
+import mongoose from "../../assets/mongoose.png";
+import express from "../../assets/express.png";
 
 export default function Skills() {
   return (
@@ -31,44 +34,62 @@ export default function Skills() {
               <span>CSS3</span>
             </p>
             <p>
-              <IoLogoJavascript className="javaScript" />
-              <span>JavaScript</span>
-            </p>
-            <p>
-              <BsGithub className="git" />
-              <span>GIT & GITHUB</span>
-            </p>
-            <p>
-              <FaReact className="react" />
-              <span>REACT</span>
-            </p>
-            <p>
               <FaSass className="sass" />
               <span>SASS</span>
             </p>
             <p>
-              <TbBrandBootstrap className="bootstrap" />
-              <span>BOOTSTRAP</span>
+              <IoLogoJavascript className="javaScript" />
+              <span>JavaScript</span>
             </p>
+
             <p>
-              <SiNextdotjs className="nextjs" />
-              <span>NEXT JS</span>
+              <FaReact className="react" />
+              <span>REACT JS</span>
             </p>
             <p>
               <SiRedux className="redux" />
               <span>REDUX</span>
             </p>
-            <p>
-              <SiFirebase className="firebase" />
-              <span>FIREBASE</span>
-            </p>
-            <p>
+            {/* <p>
               <img
                 src={rtlImage}
                 alt="react-testing-library"
                 style={{ width: "15%" }}
               />
               <span>REACT TESTING LIBRARY</span>
+            </p> */}
+
+            {/* <p>
+              <TbBrandBootstrap className="bootstrap" />
+              <span>BOOTSTRAP</span>
+            </p> */}
+            <p>
+              <SiNextdotjs className="nextjs" />
+              <span>NEXT JS</span>
+            </p>
+            <p>
+              <FaNodeJs className="nodejs" />
+              <span>NODE JS</span>
+            </p>
+            <p>
+              <SiExpress className="express" />
+              <span>EXPRESS</span>
+            </p>
+            <p>
+              <DiMongodb className="mongodb" />
+              <span>MONGO DB</span>
+            </p>
+            <p>
+              <img src={mongoose} alt="mongoose" style={{ width: "15%" }} />
+              <span>MONGOOSE</span>
+            </p>
+            <p>
+              <SiFirebase className="firebase" />
+              <span>FIREBASE</span>
+            </p>
+            <p>
+              <BsGithub className="git" />
+              <span>GIT & GITHUB</span>
             </p>
           </div>
         </div>
