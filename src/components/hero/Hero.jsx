@@ -12,7 +12,7 @@ export default function Hero() {
           This space belongs to <br />
           <span>Elue Wisdom</span>
         </h2>
-        <p>I'm a Frontend Developer</p>
+        <p>I'm a Fullstack Web Developer</p>
       </div>
     </div>
   );
