@@ -14,6 +14,21 @@ export const projects = [
     stacks: "react, sass, redux toolkit, context API firebase",
   },
   {
+    image: "nodeopenai.png",
+    title: "Image Generator with Open AI",
+    desc: "This is a full stack application built with typescript on both Frontend(React) and Backend(Node JS and Express)",
+    href: "https://nodeopenai.netlify.app/",
+    stacks: "react, nodejs, typescript, express, Open AI (DALL-E),",
+  },
+  {
+    image: "aryhomes.png",
+    title: "Ary Homes",
+    desc: "Ary Homes is a fullstack real estate application with firebase as a backend service, with features such as authentication, google oAuth, fully functional and detailed admin panel to add edit and delete properties, view all users as well as a blog section, users can also add blog posts which would automatically appear on the site",
+    href: "https://aryhomes.netlify.app",
+    stacks: "react, sass, redux toolkit, context API firebase",
+  },
+
+  {
     image: "shopland.png",
     title: "Shopland E-commerce application",
     desc: "A fullstack e-commerce application with firebase as a backend service, with features such as authentication, google oAuth, admin panel to add edit and delete products as well as change order status which reflects on users page, review section to review products after a purchase, etc. ",
