@@ -11,7 +11,7 @@ export default function About() {
         </div>
         <div className="about_details">
           I am <span>Elue Wisdom</span>, a Software Developer <br /> <br />
-          Passionte Fullstack Developer who is always ready to learn and work
+          Passionte Software Developer who is always ready to learn and work
           with people. I have used my skills to build few projects, and
           technologies I have worked with (but not limited to) include: HTML,
           CSS, SASS, JavaScript, jQuery, React JS, Redux, Firebase, Next JS,
