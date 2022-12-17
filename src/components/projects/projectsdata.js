@@ -18,7 +18,7 @@ export const projects = [
     title: "Pinvent App",
     desc: "Pinvent is a fullstack inventory application where a user can store and manage products. features include: Full authentication system, and user profiles. Also ability to add, edit products etc",
     href: "https://pinvent.netlify.app",
-    stacks: "react, redux toolkit, node js, sass, mongoDB, express",
+    stacks: "react, redux toolkit, node js, sass, mongoDB, express, mongoose",
   },
   {
     image: "nodeopenai.png",
