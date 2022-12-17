@@ -10,7 +10,7 @@ export default function About() {
           <img src={Photo} alt="wisdom" />
         </div>
         <div className="about_details">
-          I am <span>Elue Wisdom</span>, a Fullstack Developer <br /> <br />
+          I am <span>Elue Wisdom</span>, a Software Developer <br /> <br />
           Passionte Fullstack Developer who is always ready to learn and work
           with people. I have used my skills to build few projects, and
           technologies I have worked with (but not limited to) include: HTML,
