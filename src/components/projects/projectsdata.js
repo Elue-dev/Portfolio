@@ -11,7 +11,7 @@ export const projects = [
     title: "Ary Homes",
     desc: "Ary Homes is a fullstack real estate application with firebase as a backend service, with features such as authentication, google oAuth, fully functional and detailed admin panel to add edit and delete properties, view all users as well as a blog section, users can also add blog posts which would automatically appear on the site",
     href: "https://aryhomes.netlify.app",
-    stacks: "react, sass, redux toolkit, context API firebase",
+    stacks: "react, sass, redux toolkit, context API, firebase",
   },
   {
     image: "pinvent.png",
