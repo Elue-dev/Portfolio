@@ -14,6 +14,13 @@ export const projects = [
     stacks: "react, sass, redux toolkit, context API firebase",
   },
   {
+    image: "pinvent.png",
+    title: "Pinvent App",
+    desc: "Pinvent is a fullstack inventory application where a user can store and manage products. features include: Full authentication system, and user profiles. Also ability to add, edit products etc",
+    href: "https://pinvent.netlify.app",
+    stacks: "react, redux toolkit, node js, sass, mongoDB, express",
+  },
+  {
     image: "nodeopenai.png",
     title: "Image Generator with Open AI",
     desc: "This is a full stack application built with typescript on both Frontend(React) and Backend(Node JS and Express)",
