@@ -1,10 +1,18 @@
 export const projects = [
   {
+    image: "clarestate.png",
+    title: "Clarestate",
+    desc: "Clarestate is a full stack application with full backend features such as authentication, authorization, emailing and more. I  built something similar before but Firebase was useed as the backend service. This was with a Node JS backend i built from scratch",
+    href: "https://clarestate.netlify.app",
+    stacks:
+      "react, node.js, express, mongoDB, mongoose, SASS, redux toolkit, react query",
+  },
+  {
     image: "abode.png",
     title: "Abode Luxury",
     desc: "I built this web app for a client who owns a Real Estate Development Agency in Nigeria, based in Abuja",
     href: "https://abodeluxuryng.com",
-    stacks: "Next JS, SASS, redux",
+    stacks: "next.js, SASS, redux",
   },
   {
     image: "aryhomes.png",
