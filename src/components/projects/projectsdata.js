@@ -2,7 +2,7 @@ export const projects = [
   {
     image: "clarestate.png",
     title: "Clarestate",
-    desc: "Clarestate is a full stack application with full backend features such as authentication, authorization, emailing and more. I  built something similar before but Firebase was used as the backend service. This was with a Node JS backend server i built from scratch",
+    desc: "Clarestate is a full stack application with full backend features such as authentication, authorization, emailing and more. I  built something similar before but Firebase was used as the backend service. This was with a Node JS backend server i built from scratch. It was written entirely in typescript with both React and Node.js.",
     href: "https://clarestate.netlify.app",
     stacks:
       "react, node.js, express, mongoDB, mongoose, SASS, redux toolkit, react query",
@@ -35,14 +35,6 @@ export const projects = [
     href: "https://nodeopenai.netlify.app/",
     stacks: "react, nodejs, typescript, express, Open AI (DALL-E),",
   },
-  {
-    image: "aryhomes.png",
-    title: "Ary Homes",
-    desc: "Ary Homes is a fullstack real estate application with firebase as a backend service, with features such as authentication, google oAuth, fully functional and detailed admin panel to add edit and delete properties, view all users as well as a blog section, users can also add blog posts which would automatically appear on the site",
-    href: "https://aryhomes.netlify.app",
-    stacks: "react, sass, redux toolkit, context API firebase",
-  },
-
   {
     image: "shopland.png",
     title: "Shopland E-commerce application",
