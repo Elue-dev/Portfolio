@@ -16,10 +16,10 @@ import express from "../../assets/express.png";
 export default function Skills() {
   return (
     <div className="skills" id="skills">
-      <h1 className="title">Stacks</h1>
+      <h1 className="title">Stack</h1>
       <div className="skills_info">
         <div className="skills_details">
-          <h2 className="skills_info_title"> My creative skills & stacks </h2>
+          <h2 className="skills_info_title"> My creative skills & stack </h2>
           <p className="skills_info_desc">
             I have worked with these technologies and maximized them in building
             beautiful UI of websites and responsive for all devices

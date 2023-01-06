@@ -1,5 +1,5 @@
 import "./About.scss";
-import Photo from "../../assets/wisdom.jpeg";
+import Photo from "../../assets/wisdom2.jpeg";
 
 export default function About() {
   return (

@@ -27,7 +27,7 @@ export default function Projects() {
                 <h2 className="project_title">{project.title}</h2>
                 <p className="project_description">{project.desc}</p>
                 <p className="project_stacks">
-                  <b>Stacks:</b> <code>{project.stacks} and more...</code>
+                  <b>Stack:</b> <code>{project.stack} and more...</code>
                 </p>
                 <a href={project.href}>
                   <div className="visit">

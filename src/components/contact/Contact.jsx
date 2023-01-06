@@ -9,10 +9,9 @@ import { AiFillFileText } from "react-icons/ai";
 import { BsChatRightText, BsCheck2All } from "react-icons/bs";
 import { FiAlertTriangle } from "react-icons/fi";
 import { BiLoader } from "react-icons/bi";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-import { database } from "../../firebase";
 import ReactWhatsapp from "react-whatsapp";
 import { TbBrandWhatsapp } from "react-icons/tb";
+import axios from "axios";
 
 export default function Contact() {
   const [title, setTitle] = useState("");
@@ -22,39 +21,28 @@ export default function Contact() {
   const [success, setSuccess] = useState(null);
   const [loading, setLoading] = useState(null);
 
-  const handleSubmit = async (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
+    const body = { email, name: title, message };
+
     try {
-      if (title === "" || email === "" || message === "") {
-        setError("Please fill all fields");
-        window.setTimeout(() => {
-          setError("");
-        }, 3000);
-        return;
-      }
-
       setLoading(true);
-      setError("");
-      setSuccess("");
-
-      const colRef = collection(database, "messages");
-      await addDoc(colRef, {
-        title,
-        email,
-        message,
-        time: serverTimestamp(),
-      });
+      const response = await axios.post(
+        "https://clarestate-server-production.up.railway.app/contact-me",
+        body
+      );
+      if (response) {
+        setSuccess(response.data.message);
+        setMessage("");
+        setEmail("");
+        setTitle("");
+        setTimeout(() => setSuccess(""), 5000);
+      }
       setLoading(false);
-      setSuccess("Your message has been recieved, thank you");
-      window.setTimeout(() => {
-        setSuccess("");
-      }, 4000);
-      setTitle("");
-      setEmail("");
-      setMessage("");
-    } catch (err) {
-      console.log(err.message);
+    } catch (error) {
+      setError(error.message);
+      setLoading(false);
     }
   };
 
@@ -104,7 +92,7 @@ export default function Contact() {
         </div>
         <form
           className="contact_form"
-          onSubmit={handleSubmit}
+          onSubmit={sendEmail}
           name="contact-form"
           data-netlify="true"
         >
@@ -132,7 +120,7 @@ export default function Contact() {
           <input
             type="text"
             name="name"
-            placeholder="Your Name..."
+            placeholder="Your Name / Company Name..."
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
