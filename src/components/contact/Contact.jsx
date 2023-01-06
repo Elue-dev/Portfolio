@@ -24,12 +24,18 @@ export default function Contact() {
   const sendEmail = async (e) => {
     e.preventDefault();
 
+    if (!email || !title || !message) {
+      setError("Please fill all fields");
+      setTimeout(() => setError(""), 5000);
+      return;
+    }
+
     const body = { email, name: title, message };
 
     try {
       setLoading(true);
       const response = await axios.post(
-        "https://clarestate-server-production.up.railway.app/contact-me",
+        `${process.env.REACT_APP_SERVER_URL}/api/contact/contact-me`,
         body
       );
       if (response) {
@@ -41,7 +47,9 @@ export default function Contact() {
       }
       setLoading(false);
     } catch (error) {
+      console.log(error);
       setError(error.message);
+      setTimeout(() => setError(""), 5000);
       setLoading(false);
     }
   };

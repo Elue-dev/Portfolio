@@ -14,12 +14,12 @@ export default function About() {
           Passionte Software Developer who is always ready to learn and work
           with people. I have used my skills to build few projects, and
           technologies I have worked with (but not limited to) include: HTML,
-          CSS, SASS, JavaScript, jQuery, React JS, Redux, Firebase, Next JS,
-          GraphQL, Node JS, Express, MongoDB, Mongoose, and Firebase (BaaS){" "}
-          <br /> <br />I have turned UI designs into functional responsive
-          websites using the skills i have learnt. I have also used Microsoft
-          technologies such as Microsoft sharepoint, Microsoft Azure and
-          Microsoft Power Automate for automated workflows.
+          CSS, SASS, JavaScript, jQuery, React JS, Redux, Typescript, Firebase,
+          Next JS, GraphQL, Node JS, Express, MongoDB, Mongoose, and Firebase
+          (BaaS) <br /> <br />I have turned UI designs into functional
+          responsive websites using the skills i have learnt. I have also used
+          Microsoft technologies such as Microsoft sharepoint, Microsoft Azure
+          and Microsoft Power Automate for automated workflows.
         </div>
       </div>
     </div>
