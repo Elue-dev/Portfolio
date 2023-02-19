@@ -7,7 +7,13 @@ import { FaNodeJs, FaReact } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
 import { TbBrandBootstrap } from "react-icons/tb";
 import { DiMongodb } from "react-icons/di";
-import { SiNextdotjs, SiFirebase, SiRedux, SiExpress } from "react-icons/si";
+import {
+  SiNextdotjs,
+  SiFirebase,
+  SiRedux,
+  SiExpress,
+  SiPrisma,
+} from "react-icons/si";
 import SkillsImage from "../../assets/dev.webp";
 import rtlImage from "../../assets/rtl.png";
 import mongoose from "../../assets/mongoose.png";
@@ -82,6 +88,10 @@ export default function Skills() {
             <p>
               <img src={mongoose} alt="mongoose" style={{ width: "15%" }} />
               <span>MONGOOSE</span>
+            </p>
+            <p>
+              <SiPrisma />
+              <span>PRISMA</span>
             </p>
             <p>
               <SiFirebase className="firebase" />

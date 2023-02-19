@@ -2,7 +2,7 @@ export const projects = [
   {
     image: "clarestate.png",
     title: "Clarestate",
-    desc: "Clarestate is a full stack application with full backend features such as authentication, authorization, emailing and more. I  built something similar before but Firebase was used as the backend service. This was with a Node JS backend server i built from scratch. It was written entirely in typescript with both React and Node.js.",
+    desc: "Clarestate is a full stack application with full backend features such as authentication, authorization, email verification and more. I  built something similar before but Firebase was used as the backend service. This was with a Node JS backend server i built from scratch. It was written entirely in typescript with both React and Node.js.",
     href: "https://clarestate.netlify.app",
     stack:
       "react, node.js, express, mongoDB, mongoose, SASS, redux toolkit, react query",
@@ -47,7 +47,7 @@ export const projects = [
   {
     image: "empdir.png",
     title: "Employee Directory",
-    desc: "An applicatio that contains a full log of employees/staffs, ability to filter and sort according to preference, an expense log that contains all expenses made, which can also be filtered and sorted in detail. More detailes explaination of this project can be found in the README file of the repository of this project: https://github.com/Elue-dev/Employee-Directory",
+    desc: "An application that contains a full log of employees/staffs, ability to filter and sort according to preference, an expense log that contains all expenses made, which can also be filtered and sorted in detail. More detailes explaination of this project can be found in the README file of the repository of this project: https://github.com/Elue-dev/Employee-Directory",
     href: "https://employeedirapp.netlify.app",
     stack: "react, redux toolkit, react context",
   },
