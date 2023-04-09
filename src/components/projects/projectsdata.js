@@ -5,7 +5,15 @@ export const projects = [
     desc: "Clarestate is a full stack application with full backend features such as authentication, authorization, email verification and more. I  built something similar before but Firebase was used as the backend service. This was with a Node JS backend server i built from scratch. It was written entirely in typescript with both React and Node.js.",
     href: "https://clarestate.netlify.app",
     stack:
-      "react, node.js, express, mongoDB, mongoose, SASS, redux toolkit, react query",
+      "react, node.js, express, mongoDB, mongoose, SASS, redux toolkit, tanstack react query",
+  },
+  {
+    image: "booksapp.png",
+    title: "BookVerse",
+    desc: "BookVerse is a full stack application where users can purchase books, add books to the app and so on.",
+    href: "https://bookverseapp.netlify.app",
+    stack:
+      "react, node.js, express, postgreSQL, redis, SASS, redux toolkit, tanstack react query, paystack",
   },
   {
     image: "shopland.png",
