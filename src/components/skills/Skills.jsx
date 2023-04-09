@@ -3,6 +3,7 @@ import { ImHtmlFive } from "react-icons/im";
 import { ImCss3 } from "react-icons/im";
 import { IoLogoJavascript } from "react-icons/io";
 import { BsGithub } from "react-icons/bs";
+import { GrMysql } from "react-icons/gr";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
 import { TbBrandBootstrap } from "react-icons/tb";
@@ -13,6 +14,7 @@ import {
   SiRedux,
   SiExpress,
   SiPrisma,
+  SiPostgresql,
 } from "react-icons/si";
 import SkillsImage from "../../assets/dev.webp";
 import rtlImage from "../../assets/rtl.png";
@@ -92,6 +94,14 @@ export default function Skills() {
             <p>
               <SiPrisma />
               <span>PRISMA</span>
+            </p>
+            <p>
+              <GrMysql className="mysql" />
+              <span>MySQL</span>
+            </p>
+            <p>
+              <SiPostgresql className="postgres" />
+              <span>PostgeSQL</span>
             </p>
             <p>
               <SiFirebase className="firebase" />

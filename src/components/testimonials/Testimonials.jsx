@@ -30,7 +30,7 @@ export default function Testimonials() {
             style={{ background: `url(${TesImage})` }}
           >
             <h2 className="tes_title">
-              Ridwan Otun <br /> <i>Backend Engineer at Bamboo</i>
+              Ridwan Otun <br /> <i>Backend Engineer at Smart</i>
             </h2>
             <p className="tes_detail">
               Elue Wisdom is willing to learn and is passionate about this job.
