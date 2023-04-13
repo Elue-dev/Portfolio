@@ -30,20 +30,19 @@ export const projects = [
     stack: "next.js, SASS, redux",
   },
   {
-    image: "pinvent.png",
-    title: "Pinvent App",
-    desc: "Pinvent is a fullstack inventory application where a user can store and manage products. Features include: Full authentication system, and user profiles. Also ability to add, edit products etc",
-    href: "https://pinvent.netlify.app",
-    stack: "react, redux toolkit, node js, sass, mongoDB, express, mongoose",
-  },
-  {
     image: "aryhomes.png",
     title: "Ary Homes",
     desc: "Ary Homes is a fullstack real estate application with firebase as a backend service, with features such as authentication, google oAuth, fully functional and detailed admin panel to add edit and delete properties, view all users as well as a blog section, users can also add blog posts which would automatically appear on the site",
     href: "https://aryhomes.netlify.app",
     stack: "react, sass, redux toolkit, context API, firebase",
   },
-
+  {
+    image: "pinvent.png",
+    title: "Pinvent App",
+    desc: "Pinvent is a fullstack inventory application where a user can store and manage products. Features include: Full authentication system, and user profiles. Also ability to add, edit products etc",
+    href: "https://pinvent.netlify.app",
+    stack: "react, redux toolkit, node js, sass, mongoDB, express, mongoose",
+  },
   {
     image: "nodeopenai.png",
     title: "Image Generator with Open AI",
@@ -114,7 +113,7 @@ export const projects = [
     title: "Rick and Morty App",
     desc: "Rick and Morty App built with React and GraphQL",
     href: "https://ricknmortyyapp.netlify.app",
-    stack: "react , css, graphQL",
+    stack: "react, css, graphQL",
   },
   {
     image: "microsoft.png",
@@ -137,11 +136,11 @@ export const projects = [
     href: "https://jsnumberguessergame.netlify.app",
     stack: "html, css, vanilla JavaScript",
   },
-  {
-    image: "gpt3.png",
-    title: "GPT-3 Website",
-    desc: "A very cool React landing page built with common react method eg props, state, mapping, etc",
-    href: "https://gpt3site.netlify.app",
-    stack: "react, css",
-  },
+  // {
+  //   image: "gpt3.png",
+  //   title: "GPT-3 Website",
+  //   desc: "A very cool React landing page built with common react method eg props, state, mapping, etc",
+  //   href: "https://gpt3site.netlify.app",
+  //   stack: "react, css",
+  // },
 ];

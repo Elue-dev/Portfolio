@@ -15,11 +15,11 @@ export default function About() {
           with people. I have used my skills to build few projects, and
           technologies I have worked with (but not limited to) include: HTML,
           CSS, SASS, JavaScript, jQuery, React JS, Redux, Typescript, Next JS,
-          GraphQL, Node JS, Express, MongoDB, Mongoose, and Firebase (BaaS){" "}
-          <br /> <br />I have turned UI designs into functional responsive
-          websites using the skills i have learnt. I have also used Microsoft
-          technologies such as Microsoft sharepoint, Microsoft Azure and
-          Microsoft Power Automate for automated workflows.
+          GraphQL, Node JS, Express, MongoDB, Mongoose, MySQL, Postgres, Prisma
+          and Firebase (BaaS) <br /> <br />I have turned UI designs into
+          functional responsive websites using the skills i have learnt. I have
+          also used Microsoft technologies such as Microsoft sharepoint,
+          Microsoft Azure and Microsoft Power Automate for automated workflows.
         </div>
       </div>
     </div>
