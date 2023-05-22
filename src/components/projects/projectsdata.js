@@ -1,11 +1,10 @@
 export const projects = [
   {
-    image: "clarestate.png",
-    title: "Clarestate",
-    desc: "Clarestate is a full stack application with full backend features such as authentication, authorization, email verification and more. I  built something similar before but Firebase was used as the backend service. This was with a Node JS backend server i built from scratch. It was written entirely in typescript with both React and Node.js.",
-    href: "https://clarestate.netlify.app",
-    stack:
-      "react, node.js, express, mongoDB, mongoose, SASS, redux toolkit, tanstack react query",
+    image: "aryhomes.png",
+    title: "Ary Homes",
+    desc: "Ary Homes is a fullstack real estate application with firebase as a backend service, with features such as authentication, google oAuth, fully functional and detailed admin panel to add edit and delete properties, view all users as well as a blog section, users can also add blog posts which would automatically appear on the site",
+    href: "https://aryhomes.netlify.app",
+    stack: "react, sass, redux toolkit, context API, firebase",
   },
   {
     image: "booksapp.png",
@@ -14,6 +13,14 @@ export const projects = [
     href: "https://bookverseapp.netlify.app",
     stack:
       "react, node.js, express, postgreSQL, redis, SASS, redux toolkit, tanstack react query, paystack",
+  },
+  {
+    image: "clarestate.png",
+    title: "Clarestate",
+    desc: "Clarestate is a full stack application with full backend features such as authentication, authorization, email verification and more. I  built something similar before but Firebase was used as the backend service. This was with a Node JS backend server i built from scratch. It was written entirely in typescript with both React and Node.js.",
+    href: "https://clarestate.netlify.app",
+    stack:
+      "react, node.js, express, mongoDB, mongoose, SASS, redux toolkit, tanstack react query",
   },
   {
     image: "shopland.png",
@@ -28,13 +35,6 @@ export const projects = [
     desc: "I built this web app for a client who owns a Real Estate Development Agency in Nigeria, based in Abuja",
     href: "https://abodeluxuryng.com",
     stack: "next.js, SASS, redux",
-  },
-  {
-    image: "aryhomes.png",
-    title: "Ary Homes",
-    desc: "Ary Homes is a fullstack real estate application with firebase as a backend service, with features such as authentication, google oAuth, fully functional and detailed admin panel to add edit and delete properties, view all users as well as a blog section, users can also add blog posts which would automatically appear on the site",
-    href: "https://aryhomes.netlify.app",
-    stack: "react, sass, redux toolkit, context API, firebase",
   },
   {
     image: "pinvent.png",
