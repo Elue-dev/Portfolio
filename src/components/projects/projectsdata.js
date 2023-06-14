@@ -5,7 +5,7 @@ export const projects = [
     desc: "Bytes blog is a full stack blog application with full authentication and authorization, emails, ability to add comments, like posts, reply comments (fully nested comment system) and more.",
     href: "https://bytes-blog-client.vercel.app",
     stack:
-      "React with Typescript, Redux Toolkit, Firebase for google oAuth mixture of SCSS and Tailwind, Node.js with Typescript, Postgres, Prisma, JWT for authentication and authorization",
+      "React with Typescript, Redux Toolkit, React query, Firebase for google oAuth mixture of SCSS and Tailwind, Node.js with Typescript, Postgres, Prisma, JWT for authentication and authorization",
   },
   {
     image: "aryhomes.png",
