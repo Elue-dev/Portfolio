@@ -1,5 +1,13 @@
 export const projects = [
   {
+    image: "bytesblog.png",
+    title: "Bytes Blog",
+    desc: "Bytes blog is a full stack blog application with full authentication and authorization, emails, ability to add comments, like posts, reply comments (fully nested comment system) and more.",
+    href: "https://bytes-blog-client.vercel.app",
+    stack:
+      "React with Typescript, Redux Toolkit, Firebase for google oAuth mixture of SCSS and Tailwind, Node.js with Typescript, Postgres, Prisma, JWT for authentication and authorization",
+  },
+  {
     image: "aryhomes.png",
     title: "Ary Homes",
     desc: "Ary Homes is a fullstack real estate application with firebase as a backend service, with features such as authentication, google oAuth, fully functional and detailed admin panel to add edit and delete properties, view all users as well as a blog section, users can also add blog posts which would automatically appear on the site",
