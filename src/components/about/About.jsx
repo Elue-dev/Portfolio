@@ -11,7 +11,7 @@ export default function About() {
           Passionte Software Developer who is always ready to learn and work
           with people. I have used my skills to build few projects, and
           technologies I have worked with (but not limited to) include: HTML,
-          CSS, SASS, JavaScript, jQuery, React JS, Redux, Typescript, Next JS,
+          CSS, SASS, JavaScript, jQuery, React JS, React Native, Redux, Typescript, Next JS,
           GraphQL, Node JS, Express, MongoDB, Mongoose, MySQL, Postgres, Prisma
           and Firebase (BaaS) <br /> <br />I have turned UI designs into
           functional responsive websites using the skills i have learnt. I have
