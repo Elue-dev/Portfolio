@@ -54,6 +54,12 @@ export default function Skills() {
               <FaReact className="react" />
               <span>REACT JS</span>
             </p>
+
+            <p>
+              <FaReact className="react" />
+              <span>REACT NATIVE</span>
+            </p>
+
             <p>
               <SiRedux className="redux" />
               <span>REDUX</span>
