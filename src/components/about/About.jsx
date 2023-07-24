@@ -1,14 +1,11 @@
 import "./About.scss";
-import Photo from "../../assets/wisdom2.jpeg";
+// import Photo from "../../assets/wisdom2.jpeg";
 
 export default function About() {
   return (
     <div className="about" id="about">
       <h1 className="title">About</h1>
       <div className="about_info">
-        <div className="about_image">
-          <img src={Photo} alt="wisdom" />
-        </div>
         <div className="about_details">
           I am <span>Elue Wisdom</span>, a Software Developer <br /> <br />
           Passionte Software Developer who is always ready to learn and work
